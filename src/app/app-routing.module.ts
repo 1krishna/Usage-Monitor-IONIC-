@@ -11,10 +11,12 @@ const routes: Routes = [
     path: 'home',
     loadChildren: './home/home.module#HomePageModule'
   },
-  {
-    path: 'list',
-    loadChildren: './list/list.module#ListPageModule'
-  }
+  { path: 'history', loadChildren: './history/history.module#HistoryPageModule' },
+  { path: 'camt', loadChildren: './camt/camt.module#CamtPageModule' },
+  { path: 'list', loadChildren: './list/list.module#ListPageModule' },
+  { path: 'Cdetails', loadChildren: './details/details.module#DetailsPageModule' },
+  { path: 'details', loadChildren: './camt/details/details.module#DetailsPageModule' },
+  { path: 'refresh', loadChildren: './refresh/refresh.module#RefreshPageModule' },
 ];
 
 @NgModule({

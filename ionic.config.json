@@ -1,5 +1,7 @@
 {
   "name": "room",
-  "integrations": {},
+  "integrations": {
+    "cordova": {}
+  },
   "type": "angular"
 }

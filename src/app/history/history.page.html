@@ -1,0 +1,42 @@
+<ion-header>
+  <ion-toolbar>
+    <ion-buttons slot="start">
+      <ion-menu-button></ion-menu-button>
+    </ion-buttons>
+    <ion-title>
+      History
+    </ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content>
+  <ion-item>
+    <ion-label>Spent By</ion-label>
+    <ion-select placeholder="Select One" [(ngModel)]="from">
+      <ion-select-option value="anil">Anil</ion-select-option>
+      <ion-select-option value="vamsi">Vamsi</ion-select-option>
+      <ion-select-option value="sriram">Sri Ram</ion-select-option>
+      <ion-select-option value="kk">Krishna Kanth</ion-select-option>
+      <ion-select-option value="praneeth">Praneeth</ion-select-option>
+    </ion-select>
+  </ion-item><br>
+  <div style="text-align:center;" (click)="exchange()">
+    <ion-icon name="arrow-round-up" size='large'></ion-icon>
+    <ion-icon name="arrow-round-down" size='large'></ion-icon>
+  </div>
+  <br>
+  <ion-item>
+    <ion-label>Spent To</ion-label>
+    <ion-select placeholder="Select One" [(ngModel)]="to">
+      <ion-select-option value="anil">Anil</ion-select-option>
+      <ion-select-option value="vamsi">Vamsi</ion-select-option>
+      <ion-select-option value="sriram">Sri Ram</ion-select-option>
+      <ion-select-option value="kk">Krishna Kanth</ion-select-option>
+      <ion-select-option value="praneeth">Praneeth</ion-select-option>
+    </ion-select>
+  </ion-item>
+  <ion-button expand="block" (click)='details();'>
+    Details
+  </ion-button>
+  <!-- <ion-button (click)='click()'>HELLO</ion-button> -->
+</ion-content>
